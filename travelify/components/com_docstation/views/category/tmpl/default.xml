@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_DOCSTATION_CATEGORY_VIEW_DEFAULT_TITLE" option="COM_DOCSTATION_CATEGORY_VIEW_DEFAULT_OPTION">
+		<message>
+			<![CDATA[COM_DOCSTATION_CATEGORY_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="id"
+				type="category"
+				extension="com_docstation"
+				label="COM_DOCSTATION_FIELD_CATEGORY_LABEL"
+				description="COM_DOCSTATION_FIELD_CATEGORY_DESC"
+				required="true"
+			/>
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="basic" label="JGLOBAL_CATEGORY_OPTIONS">
+			<field name="show_category_title" type="list"
+				label="JGLOBAL_SHOW_CATEGORY_TITLE"
+				description="JGLOBAL_SHOW_CATEGORY_TITLE_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="show_description" type="list"
+				description="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_DESC"
+				label="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_LABEL"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="show_description_image" type="list"
+				description="JGLOBAL_SHOW_CATEGORY_IMAGE_DESC"
+				label="JGLOBAL_SHOW_CATEGORY_IMAGE_LABEL"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="maxLevel" type="list"
+				description="JGLOBAL_MAXLEVEL_DESC"
+				label="JGLOBAL_MAXLEVEL_LABEL"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="-1">JALL</option>
+				<option value="0">JNONE</option>
+				<option value="1">J1</option>
+				<option value="2">J2</option>
+				<option value="3">J3</option>
+				<option value="4">J4</option>
+				<option value="5">J5</option>
+			</field>
+
+			<field name="show_empty_categories" type="list"
+				label="JGLOBAL_SHOW_EMPTY_CATEGORIES_LABEL"
+				description="COM_CONTENT_SHOW_EMPTY_CATEGORIES_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="show_subcategories" type="list"
+			label="COM_DOCSTATION_SHOW_SUBCATEGORIES_LABEL"
+			description="COM_DOCSTATION_SHOW_SUBCATEGORIES_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">COM_DOCSTATION_SHOW_SUBCATEGORIES_ONLY</option>
+				<option value="2">COM_DOCSTATION_SHOW_SUBCATEGORIES_AND_DOCUMENTS</option>
+			</field>
+
+			<field name="show_category_heading_title_text" type="list"
+			label="COM_DOCSTATION_SHOW_SUBCATEGORIES_HEADING_LABEL"
+			description="COM_DOCSTATION_SHOW_SUBCATEGORIES_HEADING_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field name="show_subcat_title" type="list"
+			label="COM_DOCSTATION_SHOW_SUBCATEGORIES_TITLE_LABEL"
+			description="COM_DOCSTATION_SHOW_SUBCATEGORIES_TITLE_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field name="show_subcat_desc" type="list"
+			label="JGLOBAL_SHOW_SUBCATEGORIES_DESCRIPTION_LABEL"
+			description="JGLOBAL_SHOW_SUBCATEGORIES_DESCRIPTION_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+		<fieldset name="order" label="COM_DOCSTATION_VIEW_ORDER">
+			<field name="category_order" type="list"
+				label="COM_DOCSTATION_CATEGORY_ORDER_LABEL"
+				description="COM_DOCSTATION_CATEGORY_ORDER_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">COM_DOCSTATION_ORDER_MANAGER</option>
+				<option value="1">COM_DOCSTATION_ORDER_TITLE_ASC</option>
+				<option value="2">COM_DOCSTATION_ORDER_TITLE_DESC</option>
+				<option value="3">COM_DOCSTATION_ORDER_DATE_ASC</option>
+				<option value="4">COM_DOCSTATION_ORDER_DATE_DESC</option>
+			</field>
+
+			<field name="documents_order" type="list"
+				description="COM_DOCSTATION_DOCUMENTS_ORDER_DESC"
+				label="COM_DOCSTATION_DOCUMENTS_ORDER_LABEL"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">COM_DOCSTATION_ORDER_MANAGER</option>
+				<option value="1">COM_DOCSTATION_ORDER_TITLE_ASC</option>
+				<option value="2">COM_DOCSTATION_ORDER_TITLE_DESC</option>
+				<option value="3">COM_DOCSTATION_ORDER_DATE_ASC</option>
+				<option value="4">COM_DOCSTATION_ORDER_DATE_DESC</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

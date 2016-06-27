@@ -1,0 +1,47 @@
+/* Inline document links */
+.docstation-file {font-size: 110%;}
+.docstation-file img.docstation-icon {vertical-align: middle; margin: 0 5px;}
+.ds-no img.docstation-icon {display: none;}
+.ds-16 img.docstation-icon {max-width: 16px;}
+.ds-24 img.docstation-icon {max-width: 24px;}
+.ds-32 img.docstation-icon {max-width: 32px;}
+.ds-48 img.docstation-icon {max-width: 48px;}
+
+/* Document list view */
+.docstation-row {padding-bottom: 10px;}
+.docstation-desc {margin: 5px 15px;}
+
+/* JS Uploader */
+#ds-uploader {text-align: center; padding: 13px;}
+#ds-uploader.hover {background-color: #BBE9FF; padding: 10px; border-radius: 10px; border: 3px solid #7CD6FF;}
+#ds-uploader-progress {margin: 5px 0;}
+#ds-uploader .control-group {text-align: left;}
+.ds-uploader-row {padding: 5px 0;}
+.ds-uploader-name {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	white-space: nowrap;
+	overflow: hidden;
+	vertical-align: bottom;
+}
+.ds-uploader-ps {
+	display: inline-block;
+	margin: 0 10px;
+	width: 150px;
+	height: 12px;
+	line-height: 12px;
+	text-align: left;
+	background-color: #FFF;
+	border-left: 1px solid #00AFFF;
+	border-right: 1px solid #00AFFF;
+}
+.ds-uploader-psl {
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	background-color: #00AFFF;
+}
+.ds-uploader-result {
+	cursor: pointer;
+}

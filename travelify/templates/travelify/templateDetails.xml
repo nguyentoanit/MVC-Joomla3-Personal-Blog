@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template">
+	<name>Travelify</name>
+	<creationDate>2016-02-06</creationDate>
+	<author>Nguyen Toan</author>
+	<copyright>Nguyen Toan 2016</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0</version>
+	<description>Travelify template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>fonts</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>social-icons</position>
+		<position>logo</position>
+		<position>mainmenu</position>
+		<position>featured-slider</position>
+		<position>search</position>
+		<position>recent-left</position>
+		<position>category-statistic</position>
+		<position>right-menu</position>
+		<position>calendar</position>
+		<position>recent-bottom1</position>
+		<position>recent-bottom2</position>
+		<position>tag-cloud</position>
+		<position>copyright</position>
+		<position>footer-right</position>
+		<position>login</position>
+	</positions>
+</extension>

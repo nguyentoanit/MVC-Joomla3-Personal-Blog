@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" version="3.0" method="upgrade">
+	<name>pkg_blogsten</name>
+	<creationDate>August 2014</creationDate>
+	<author>powermail4joomla.com</author>
+	<copyright>Copyright (c) 2013 BlogSten All rights reserved.</copyright>
+	    <license>GNU General Public License</license>
+	<authorEmail>admin@powermail4joomla.com</authorEmail>
+	<authorUrl>http://www.powermail4joomla.com</authorUrl>
+	<version>1.17</version>
+	<packagename>blogsten</packagename>
+	<scriptfile>script.blogsten.php</scriptfile>
+	<files>
+		<file
+			type="component"
+			id="com_blogsten"
+		>com_blogsten_j3.2.zip</file>
+		
+			<file
+			type="plugin"
+			id="corearticle"
+			group="blogsten"
+		>blogsten_corearticle.zip</file>
+			
+			<file
+			type="plugin"
+			id="blogsten"
+			group="system"
+		>plg_blogsten.zip</file>
+			
+			<file
+			type="plugin"
+			id="easyembed"
+			group="content"
+		>plg_easyembed.zip</file>
+	</files>
+	
+	<updateservers>
+                <server type="extension" priority="1" name="com_blogsten"><![CDATA[http://www.powermail4joomla.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=1]]></server>
+        </updateservers>
+</extension>

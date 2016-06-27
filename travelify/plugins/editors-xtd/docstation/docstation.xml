@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="plugin" group="editors-xtd" method="upgrade">
+	<name>plg_editors-xtd_docstation</name>
+	<creationDate>January 2013</creationDate>
+	<author>Mikhail Meschangin</author>
+	<authorEmail>wolfhound512@gmail.com</authorEmail>
+	<authorUrl>https://bitbucket.org/wolfhound512</authorUrl>
+	<copyright>Copyright (C) 2013-2014 Mikhail Meschangin. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>0.4.1</version>
+	<description>PLG_DOCSTATION_BUTTON_DESCRIPTION</description>
+	<files>
+		<filename plugin="docstation">docstation.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+</extension>

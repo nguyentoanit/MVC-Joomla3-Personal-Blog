@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_DOCSTATION_CATEGORY_VIEW_MY_TITLE" option="COM_DOCSTATION_CATEGORY_VIEW_MY_OPTION">
+		<message>
+			<![CDATA[COM_DOCSTATION_CATEGORY_VIEW_MY_DESC]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic" label="JGLOBAL_CATEGORY_OPTIONS">
+			<field
+				name="only_own_docs"
+				type="hidden"
+				default="1"
+			/>
+
+			<field
+				name="show_subcategories"
+				type="hidden"
+				default="2"
+			/>
+			
+			<field
+				name="maxLevel"
+				type="hidden"
+				default="0"
+			/>
+			
+			<field
+				name="catid"
+				type="category"
+				extension="com_docstation"
+				label="COM_DOCSTATION_FIELD_CATEGORY_LABEL"
+				description="COM_DOCSTATION_FIELD_CATEGORY_DESC"
+				default=""
+			>
+				<option value="">JOPTION_SELECT_CATEGORY</option>
+			</field>
+
+			<field
+				name="show_category_title"
+				type="list"
+				label="JGLOBAL_SHOW_CATEGORY_TITLE"
+				description="JGLOBAL_SHOW_CATEGORY_TITLE_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+
+			<field
+				name="group_categories"
+				type="radio"
+				class="btn-group btn-group-yesno"
+				label="COM_DOCSTATION_GROUP_CATEGORIES_LABEL"
+				description="COM_DOCSTATION_GROUP_CATEGORIES_DESC"
+				default="1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="frontend"
+		label="COM_DOCSTATION_CONFIG_FRONTEND_LABEL"
+		description="COM_DOCSTATION_CONFIG_FRONTEND_DESC"
+	>
+		<field
+			name="show_used"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="COM_DOCSTATION_FIELD_HIDE_USED_LABEL"
+			description="COM_DOCSTATION_FIELD_HIDE_USED_DESC"
+			default="1"
+		>
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+		<field
+			name="show_forbidden"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="COM_DOCSTATION_FIELD_HIDE_FORBIDDEN_LABEL"
+			description="COM_DOCSTATION_FIELD_HIDE_FORBIDDEN_DESC"
+			default="1"
+		>
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+		<field
+			name="show_document_page"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="COM_DOCSTATION_FIELD_SHOW_DOCUMENT_PAGE_LABEL"
+			description="COM_DOCSTATION_FIELD_SHOW_DOCUMENT_PAGE_DESC"
+			default="1"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="open_new_window"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="COM_DOCSTATION_FIELD_OPEN_NEW_WINDOW_LABEL"
+			description="COM_DOCSTATION_FIELD_OPEN_NEW_WINDOW_DESC"
+			default="1"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="replace_attributes"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="COM_DOCSTATION_FIELD_REPLACE_ATTRIBUTES_LABEL"
+			description="COM_DOCSTATION_FIELD_REPLACE_ATTRIBUTES_DESC"
+			default="1"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="show_documents_desc"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="COM_DOCSTATION_FIELD_SHOW_DOCUMENTS_DESC_LABEL"
+			description="COM_DOCSTATION_FIELD_SHOW_DOCUMENTS_DESC_DESC"
+			default="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="show_attachments_desc"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="COM_DOCSTATION_FIELD_SHOW_ATTACHMENTS_DESC_LABEL"
+			description="COM_DOCSTATION_FIELD_SHOW_ATTACHMENTS_DESC_DESC"
+			default="0"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="show_document_size"
+			type="list"
+			label="COM_DOCSTATION_FIELD_SHOW_DOCUMENT_SIZE_LABEL"
+			description="COM_DOCSTATION_FIELD_SHOW_DOCUMENT_SIZE_DESC"
+			multiple="true"
+			default="4"
+			>
+			<option value="0">None</option>
+			<option value="1">Inserted</option>
+			<option value="2">Document list</option>
+			<option value="3">Attachment list</option>
+			<option value="4">On hover</option>
+		</field>
+		<field
+			name="icon_list_size"
+			type="int"
+			label="COM_DOCSTATION_FIELD_ICON_LIST_SIZE_LABEL"
+			description="COM_DOCSTATION_FIELD_ICON_LIST_SIZE_DESC"
+			default="64"
+		/>
+		<field
+			name="icon_inline_size"
+			type="int"
+			label="COM_DOCSTATION_FIELD_ICON_INLINE_SIZE_LABEL"
+			description="COM_DOCSTATION_FIELD_ICON_INLINE_SIZE_DESC"
+			default="32"
+		/>
+		<field
+			name="icon_attachment_size"
+			type="int"
+			label="COM_DOCSTATION_FIELD_ICON_ATTACHMENT_SIZE_LABEL"
+			description="COM_DOCSTATION_FIELD_ICON_ATTACHMENT_SIZE_DESC"
+			default="48"
+		/>
+	</fieldset>
+	
+	<!-- Basic options. -->
+	<fieldset name="document"
+		label="COM_DOCSTATION_CONFIG_ATTRIBS_DOCUMENT_VIEW_LABEL">
+
+		<field
+			name="show_title"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="JGLOBAL_SHOW_TITLE_LABEL"
+			description="JGLOBAL_SHOW_TITLE_DESC">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			name="link_titles"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="JGLOBAL_LINKED_TITLES_LABEL"
+			description="JGLOBAL_LINKED_TITLES_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="show_category"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_SHOW_CATEGORY_LABEL"
+			description="JGLOBAL_SHOW_CATEGORY_DESC"
+			default="1">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			name="link_category"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_LINK_CATEGORY_LABEL"
+			description="JGLOBAL_LINK_CATEGORY_DESC"
+			default="1">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="spacer1"
+			type="spacer"
+			hr="true"
+		/>
+
+		<field
+			name="show_author"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_SHOW_AUTHOR_LABEL"
+			description="JGLOBAL_SHOW_AUTHOR_DESC"
+			default="1">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			name="link_author"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_LINK_AUTHOR_LABEL"
+			description="JGLOBAL_LINK_AUTHOR_DESC"
+			default="0">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+
+		<field
+			name="show_create_date"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_SHOW_CREATE_DATE_LABEL"
+			description="JGLOBAL_SHOW_CREATE_DATE_DESC"
+			default="0">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			name="show_modify_date"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_SHOW_MODIFY_DATE_LABEL"
+			description="JGLOBAL_SHOW_MODIFY_DATE_DESC"
+			default="0">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			name="show_publish_date"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_SHOW_PUBLISH_DATE_LABEL"
+			description="JGLOBAL_SHOW_PUBLISH_DATE_DESC"
+			default="1">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			id="show_tags"
+			name="show_tags"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="COM_DOCSTATION_SHOW_TAGS_LABEL"
+			description="COM_DOCSTATION_SHOW_TAGS_LABEL">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			name="spacer2"
+			type="spacer"
+			hr="true"
+		/>
+			
+		<field
+			name="show_icons"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_SHOW_ICONS_LABEL"
+			description="JGLOBAL_SHOW_ICONS_DESC"
+			default="1">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			name="show_print_icon"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_SHOW_PRINT_ICON_LABEL"
+			description="JGLOBAL_SHOW_PRINT_ICON_DESC"
+			default="1">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			name="show_email_icon"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_SHOW_EMAIL_ICON_LABEL"
+			description="JGLOBAL_SHOW_EMAIL_ICON_DESC"
+			default="1">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+
+		<field
+			name="show_hits"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			label="JGLOBAL_SHOW_HITS_LABEL"
+			description="JGLOBAL_SHOW_HITS_DESC"
+			default="1">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+	</fieldset>
+	
+	<fieldset
+		name="backend"
+		label="COM_DOCSTATION_CONFIG_BACKEND_LABEL"
+		description="COM_DOCSTATION_CONFIG_BACKEND_DESC"
+	>
+		<field
+			name="log"
+			type="checkbox"
+			label="COM_DOCSTATION_FIELD_LOG_LABEL"
+			description="COM_DOCSTATION_FIELD_LOG_DESC"
+			value="1"
+			default="0"
+		/>
+		<field
+			name="max_name_length"
+			type="int"
+			label="COM_DOCSTATION_FIELD_MAX_NAME_LENGTH_LABEL"
+			description="COM_DOCSTATION_FIELD_MAX_NAME_LENGTH_DESC"
+			default="80"
+		/>
+		<field
+			name="max_ext_length"
+			type="int"
+			label="COM_DOCSTATION_FIELD_MAX_EXT_LENGTH_LABEL"
+			description="COM_DOCSTATION_FIELD_MAX_EXT_LENGTH_DESC"
+			default="20"
+		/>
+		<field
+			name="parent_type_aliases"
+			type="textarea"
+			label="COM_DOCSTATION_FIELD_PARENT_TYPE_ALIASES_LABEL"
+			description="COM_DOCSTATION_FIELD_PARENT_TYPE_ALIASES_DESC"
+			default="com_content.featured=com_content.article;
+com_content.category=com_content.article;
+com_content.form=com_content.article;
+com_blogstation.article=com_content.article;
+com_blogstation.category=com_categories.category;
+com_blogstation.document=com_docstation.document;
+com_blogstation.image=com_imgstation.image;
+com_falang.content=com_content.article;
+com_falang.categories=com_categories.category;
+com_falang.contact_details=com_contact.contact;
+com_falang.modules=com_modules.module;
+com_falang.weblinks=com_weblinks.weblink;"
+			rows="5"
+			cols="90"
+		/>
+        <field
+            name="parent_context_vars"
+            type="textarea"
+            label="COM_DOCSTATION_FIELD_PARENT_CONTEXT_VARS_LABEL"
+            description="COM_DOCSTATION_FIELD_PARENT_CONTEXT_VARS_DESC"
+            default='{"com_content":{"view":"view","id":{"_default":"id","form":"a_id"}},"com_falang":{"view":"catid","id":{"_default":{"name":"cid","type":"explode","delimiter":"|","index":1}}}}'
+            rows="5"
+            cols="90"
+        />
+	</fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_docstation"
+			section="component"
+		/>
+	</fieldset>
+</config>

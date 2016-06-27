@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.3.0" method="upgrade">
+
+	<name>com_docstation</name>
+	<creationDate>January 2013</creationDate>
+	<author>Mikhail Meschangin</author>
+	<authorEmail>wolfhound512@gmail.com</authorEmail>
+	<authorUrl>https://bitbucket.org/wolfhound512</authorUrl>
+	<copyright>Copyright (C) 2013-2014 Mikhail Meschangin. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>0.4.1</version>
+	<description>COM_DOCSTATION_DESCRIPTION</description>
+ 
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+			<file driver="postgresql" charset="utf8">sql/install.postgresql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+			<file driver="postgresql" charset="utf8">sql/uninstall.postgresql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update> <!-- Runs on update; New in 2.5 -->
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+			<schemapath type="postgresql">sql/updates/postgresql</schemapath>
+		</schemas>
+	</update>
+ 
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>docstation.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>language</folder>
+		<folder>helpers</folder>
+		<folder>controllers</folder>
+	</files>
+
+	<media destination="com_docstation" folder="media">
+		<filename>index.html</filename>
+		<folder>docicons</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="class:docstation">COM_DOCSTATION_MENU</menu>
+		<submenu>
+			<menu link="option=com_docstation" img="class:document" alt="DocStation/Documents">COM_DOCSTATION_MENU_DOCUMENTS</menu>
+			<menu link="option=com_categories&amp;extension=com_docstation" view="categories" img="class:document-cat" alt="DocStation/Categories">COM_DOCSTATION_MENU_CATEGORIES</menu>
+			<menu link="option=com_docstation&amp;view=massupload" view="massupload" img="class:massupload" alt="DocStation/Massupload">COM_DOCSTATION_MENU_MASSUPLOAD</menu>
+		</submenu>
+		<!-- Administration Main File Copy Section -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>docstation.php</filename>
+			<filename>controller.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+		</files>
+	</administration>
+	
+</extension>
